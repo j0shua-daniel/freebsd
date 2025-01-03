@@ -3,10 +3,9 @@ MADE FOR AMD GPUS!
 
 Run the following:
 ```
-git clone https://github.com/j0shua-daniel/freebsd
-cd freebsd
+curl -o setup.sh https://raw.githubusercontent.com/j0shua-daniel/freebsd/refs/heads/main/setup.sh
 chmod +x setup.sh
-su
+# RUN AS ROOT:
 ./setup.sh
 ```
 To setup sudo open `visudo` and find the line %wheel ALL=(ALL) ALL and un comment it.
