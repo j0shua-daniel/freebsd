@@ -1,0 +1,25 @@
+#!/bin/bash
+
+PS3='Please enter your GPU: '
+options=("Intel" "AMD" "AMD (older GPUs)" "Nvidia" "Quit")
+select opt in "${options[@]}"
+do
+    case $opt in
+        "Intel")
+            pkg install drm-kmod sudo; sysrc kld_list+=i915kms; sysrc powerd_enable="YES"; sysrc powerd_flags="-a hiadaptive"
+            ;;
+        "AMD")
+            pkg install drm-kmod sudo;  sysrc kld_list+=amdgpu; sysrc powerd_enable="YES"; sysrc powerd_flags="-a hiadaptive"
+            ;;
+        "AMD (older GPUs)")
+            pkg install drm-kmod sudo; sysrc kld_list+=radeonkms; sysrc powerd_enable="YES"; sysrc powerd_flags="-a hiadaptive"
+            ;;
+	"Nvidia")
+	    pkg install nvidia-driver sudo; sysrc kld_list+=nvidia-modeset; sysrc powerd_enable="YES"; sysrc powerd_flags="-a hiadaptive"
+	    ;;
+        "Quit")
+            break
+            ;;
+        *) echo "invalid option $REPLY";;
+    esac
+done
