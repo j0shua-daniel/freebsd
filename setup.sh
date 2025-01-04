@@ -1,5 +1,3 @@
-#!/bin/bash
-
 pkg install bash sudo; sysrc powerd_enable="YES"; sysrc powerd_flags="-a hiadaptive"
 
 PS3='Please enter your GPU: '
