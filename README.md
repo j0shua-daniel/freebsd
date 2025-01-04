@@ -1,5 +1,5 @@
 # Install
-MADE FOR AMD GPUS!
+Please install bash and run the setup script in bash.
 
 Run the following:
 ```
