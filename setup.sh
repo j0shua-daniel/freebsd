@@ -8,16 +8,16 @@ select opt in "${options[@]}"
 do
     case $opt in
         "Intel")
-            pkg install drm-kmod sudo; sysrc kld_list+=i915kms; 
+            pkg install drm-kmod sudo; sysrc kld_list+=i915kms; break
             ;;
         "AMD")
-            pkg install drm-kmod sudo;  sysrc kld_list+=amdgpu; 
+            pkg install drm-kmod sudo;  sysrc kld_list+=amdgpu; break
             ;;
         "AMD (older GPUs)")
-            pkg install drm-kmod sudo; sysrc kld_list+=radeonkms; 
+            pkg install drm-kmod sudo; sysrc kld_list+=radeonkms; break
             ;;
 	"Nvidia")
-	    pkg install nvidia-driver sudo; sysrc kld_list+=nvidia-modeset; sysrc 
+	    pkg install nvidia-driver sudo; sysrc kld_list+=nvidia-modeset; break
 	    ;;
         "Quit")
             break
