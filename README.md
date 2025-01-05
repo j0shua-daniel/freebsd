@@ -7,7 +7,7 @@ chmod +x setup.sh
 # RUN AS ROOT:
 ./setup.sh
 ```
-To setup sudo open `visudo` and find the line `%wheel ALL=(ALL) ALL` and un comment it.
+To setup sudo open `visudo` and add the line `%wheel ALL=(ALL) ALL`.
 
 To setup xorg run `sudo pkg install xorg-minimal` and install any WM or DE you want.
 
