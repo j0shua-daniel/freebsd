@@ -4,10 +4,9 @@ Please install bash.
 
 Run the following:
 ```
-curl -o setup.sh https://raw.githubusercontent.com/j0shua-daniel/freebsd/refs/heads/main/setup.sh
-chmod +x setup.sh
-# RUN AS ROOT:
-./setup.sh
+git clone https://github.com/j0shua-daniel/freebsd
+chmod +x freebsd/setup.sh
+./freebsd/setup.sh
 ```
 To setup sudo open `visudo` and add the line `%wheel ALL=(ALL) ALL`.
 
