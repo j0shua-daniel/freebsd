@@ -2,7 +2,7 @@
 
 pkg install sudo; sysrc powerd_enable="YES"; sysrc powerd_flags="-a hiadaptive"
 
-read -p "GPU: " answer
+read -p "GPU: [amd, nvidia, intel]" answer
 
 answer=$(echo "$answer" | tr '[:upper:]' '[:lower:]')
 
