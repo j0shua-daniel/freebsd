@@ -1,7 +1,5 @@
 # Install
 
-Please install bash.
-
 Run the following:
 ```
 git clone https://github.com/j0shua-daniel/freebsd
