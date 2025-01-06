@@ -1,6 +1,6 @@
 #!/usr/local/bin/bash
 
-pkg install bash sudo; sysrc powerd_enable="YES"; sysrc powerd_flags="-a hiadaptive"
+pkg install sudo; sysrc powerd_enable="YES"; sysrc powerd_flags="-a hiadaptive"
 
 PS3='Please enter your GPU: '
 options=("Intel" "AMD" "AMD (older GPUs)" "Nvidia" "Quit")
