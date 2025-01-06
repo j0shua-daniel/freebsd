@@ -1,5 +1,7 @@
 # Install
 
+Please install bash.
+
 Run the following:
 ```
 curl -o setup.sh https://raw.githubusercontent.com/j0shua-daniel/freebsd/refs/heads/main/setup.sh
