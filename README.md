@@ -6,9 +6,11 @@ git clone https://github.com/j0shua-daniel/freebsd
 chmod +x freebsd/setup.sh
 ./freebsd/setup.sh
 ```
-To setup sudo open `visudo` and add the line `%wheel ALL=(ALL) ALL`.
 
-To setup xorg run `sudo pkg install xorg-minimal` and install any WM or DE you want.
+## What this script does:
+1. Install GPU divers.
+2. Enable sudo for wheel group.
+3. Sets clock speed to be adaptive.
 
 ## 10 Reasons why FreeBSD is better than linux:
 
