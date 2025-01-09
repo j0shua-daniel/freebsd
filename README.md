@@ -12,21 +12,6 @@ chmod +x freebsd/setup.sh
 2. Enable sudo for wheel group.
 3. Sets clock speed to be adaptive.
 
-## 10 Reasons why FreeBSD is better than linux:
-
-1. FreeBSD's pkg manager is amazing, yes maybe not as big as [nixpkgs](https://nixos.org/nixos/packages.html) but it sure is good!
-2. Linux focuses more on developing more features, while FreeBSD focuses more on making the system better using the same packages.
-3. FreeBSD is fast!
-4. FreeBSD follows the UNIX Philosophy closer than linux.
-5. FreeBSD is more minimal than linux.
-6. FreeBSD is stable while having newer packages than some more unstable linux distros.
-7. FreeBSD has more options, such as, having wmii while other modern linux distros do not have it in their repos.
-8. FreeBSD userland allows more control than linux.
-9. Every part of FreeBSD is made by the same FreeBSD company, unlike linux which has many communities and companies making software for the same distro.
-10. FreeBSD tends to have less security issues as linux.
-
-Source: Personal experience :)
-
 ## FreeBSD Install guide:
 
 1. Add a Hostname:
