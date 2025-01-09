@@ -37,19 +37,15 @@ Source: Personal experience :)
 
 ![ipv6](https://github.com/j0shua-daniel/images/blob/main/ipv6.png?raw=true)
 
-3. Choose default ZFS file system:
-
-![zfs](https://github.com/j0shua-daniel/images/blob/main/zfs.png?raw=true)
-
-4. Recommended Selection:
+3. Recommended Selection:
 
 ![dist-select](https://github.com/j0shua-daniel/images/blob/main/distselect.png?raw=true)
 
-5. Recommended Selection:
+4. Recommended Selection:
 
 ![select](https://github.com/j0shua-daniel/images/blob/main/select.png?raw=true)
 
-6. How to setup a user:
+5. How to setup a user:
 
 ![user-setup](https://github.com/j0shua-daniel/images/blob/main/user.png?raw=true)
 
