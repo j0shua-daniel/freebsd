@@ -9,7 +9,7 @@ chmod +x freebsd/setup.sh
 
 ## What this script does:
 1. Install GPU divers.
-2. Enable sudo for wheel group.
+2. Enable doas for wheel group.
 3. Sets clock speed to be adaptive.
 
 ## FreeBSD Install guide:
