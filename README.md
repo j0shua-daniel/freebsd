@@ -44,10 +44,6 @@ Then do the following:
 
 `ee /etc/pkg/FreeBSD.conf` 
 
-You should see this:
-
-![this](https://github.com/j0shua-daniel/images/blob/main/default-file.png?raw=true)
-
 Just comment all the lines:
 
 ![comment](https://github.com/j0shua-daniel/images/blob/main/pkg-after.png?raw=true)
