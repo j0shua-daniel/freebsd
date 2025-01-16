@@ -44,8 +44,6 @@ Then do the following:
 
 `ee /etc/pkg/FreeBSD.conf` 
 
-![vi](https://github.com/j0shua-daniel/images/blob/main/vi.png?raw=true)
-
 You should see this:
 
 ![this](https://github.com/j0shua-daniel/images/blob/main/default-file.png?raw=true)
