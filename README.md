@@ -42,7 +42,7 @@ If you see this error:
 
 Then do the following:
 
-`vi /etc/pkg/FreeBSD.conf`
+`ee /etc/pkg/FreeBSD.conf` 
 
 ![vi](https://github.com/j0shua-daniel/images/blob/main/vi.png?raw=true)
 
@@ -53,6 +53,8 @@ You should see this:
 Just comment all the lines:
 
 ![comment](https://github.com/j0shua-daniel/images/blob/main/pkg-after.png?raw=true)
+
+Do `ctrl+c` and then type `exit` to save and leave ee.
 
 Then just run `pkg`, this will install pkg. 
 
