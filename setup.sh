@@ -1,8 +1,8 @@
 #!/bin/sh
 
-pkg install sudo; sysrc powerd_enable="YES"; sysrc powerd_flags="-a hiadaptive"
+pkg install doas; sysrc powerd_enable="YES"; sysrc powerd_flags="-a hiadaptive"
 
-echo "%wheel ALL=(ALL) ALL" >> /usr/local/etc/sudoers
+echo "permit persist :wheel as root" >> /usr/local/etc/doas.conf
 
 read -p "GPU: [amd, nvidia, intel] " answer
 
