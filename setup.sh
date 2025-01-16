@@ -12,7 +12,10 @@ echo "permit persist :wheel as root" >> /usr/local/etc/doas.conf
 clear
 
 echo "CHOOSE A GPU:"
-echo "amd"
+echo "1. nvidia"
+echo "2. amd"
+echo "3. intel"
+echo "4. old-amd"
 
 read -p "GPU: " answer
 
@@ -25,6 +28,14 @@ elif [ $answer = amd ] ; then
 elif [ $answer = intel ] ; then
 	pkg install drm-kmod; sysrc kld_list+=i915kms; break
 elif [ $answer = old-amd ] ; then
+	pkg install drm-kmod; sysrc kld_list+=radeonkms; break
+elif [ $answer = 1 ] ; then
+	pkg install nvidia-driver; sysrc kld_list+=nvidia-modeset; break
+elif [ $answer = 2 ] ; then
+	pkg install drm-kmod; sysrc kld_list+=amdgpu; break
+elif [ $answer = 3 ] ; then
+	pkg install drm-kmod; sysrc kld_list+=i915kms; break
+elif [ $answer = 4 ] ; then
 	pkg install drm-kmod; sysrc kld_list+=radeonkms; break
 else
 	echo "GPU not found!"
